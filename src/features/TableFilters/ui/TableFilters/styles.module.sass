@@ -1,0 +1,40 @@
+@import 'shared/styles/vars'
+
+.tableFilters
+    width: 100%
+    .top
+        display: flex
+        justify-content: space-between
+        width: 100%
+        @media(max-width: $tab-sm)
+            flex-direction: column
+            gap: 20px
+        .search
+            width: 522px
+            @media(max-width: $tab-sm)
+                width: 100%
+        .fiterBtn.active
+            color: var(--emerald-color)
+            svg
+                path
+                    stroke: var(--emerald-color)
+        .fiterBtn
+            color: var(--dark-color)
+            background: none
+            border: none
+            display: flex
+            align-items: center
+            gap: 20px
+            cursor: pointer
+            font-size: 20px
+            font-style: normal
+            text-transform: none
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -0.8px
+            transition: var(--trs-500)
+            svg
+                path
+                    transition: var(--trs-500)
+    .filtersContent
+        position: relative

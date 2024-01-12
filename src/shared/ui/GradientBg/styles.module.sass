@@ -1,0 +1,14 @@
+@import 'shared/styles/vars'
+    
+.bg
+    background: var(--bg-grad)
+    max-height: 1200px
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    pointer-events: none
+    z-index: var(--z-bg)
+    @media(max-width: $tab-sm)
+        max-height: 1800px

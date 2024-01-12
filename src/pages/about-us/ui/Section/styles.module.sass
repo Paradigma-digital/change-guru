@@ -1,0 +1,73 @@
+@import 'shared/styles/vars'
+    
+.section.left
+    .imageWrapper
+        order: 1
+        @media(max-width: $tab-sm)
+            order: 0
+    .text
+        order: 0
+        @media(max-width: $tab-sm)
+            order: 1
+.section
+    display: flex
+    justify-content: space-between
+    gap: 70px
+    padding-bottom: 65px
+    padding-top: 65px
+    border-bottom: 1px solid var(--gray-light-color)
+    &:first-child
+        padding-top: 0
+    &:last-child
+        border-bottom: none
+    @media(max-width: $tab-sm)
+        gap: 30px
+        padding-bottom: 30px
+        padding-top: 30px
+        flex-direction: column
+    .imageWrapper
+        position: relative
+        aspect-ratio: 1
+        width: 50%
+        height: 100%
+        max-width: 635px
+        max-height: 440px
+        @media(max-width: $tab-sm)
+            border-radius: var(--rounded-lg)
+            width: 100vw
+            overflow: hidden
+            max-width: 100%
+            aspect-ratio: 1.5
+        img
+            position: absolute
+            right: 0
+            left: 0
+            bottom: 0
+            top: 0
+            object-fit: contain
+            width: 100%
+            @media(max-width: $tab-sm)
+                height: 100%
+                object-fit: cover
+    .text
+        max-width: 645px
+        min-width: 400px
+        width: 50%
+        @media(max-width: $tab-sm)
+            width: 100%
+            min-width: 100%
+        .paragraphsList
+            display: flex
+            flex-direction: column
+            gap: 25px
+            margin-top: 20px
+            @media(max-width: $tab-sm)
+                gap: 0
+                margin-top: 15px
+            p
+                color: var(--gray-text-color)
+                font-size: 18px
+                font-style: normal
+                font-weight: 400
+                line-height: 140%
+                letter-spacing: -0.72px 

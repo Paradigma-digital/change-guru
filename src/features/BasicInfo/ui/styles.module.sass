@@ -1,0 +1,56 @@
+@import 'shared/styles/vars'
+    
+.info
+    padding: 50px
+    max-width: 950px
+    width: 100%
+    box-sizing: border-box
+    @media(max-width: $tab)
+        padding: 20px
+    .title
+        font-size: 30px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: -1.2px
+        margin-bottom: 30px
+        display: block
+        @media(max-width: $tab)
+            font-size: 24px
+            margin-bottom: 20px
+    .infoForm
+        display: grid
+        gap: 20px
+        @media(max-width: $tab)
+            gap: 10px
+        .mainName
+            display: grid
+            grid-template-columns: repeat(2,1fr)
+            gap: 20px
+            @media(max-width: $tab)
+                grid-template-columns: repeat(1,1fr)
+        .description
+            height: 116px
+        .doubleInputs
+            display: grid
+            grid-template-columns: 70% 28%
+            gap: 20px
+            @media(max-width: $tab)
+                grid-template-columns: repeat(1,1fr)
+                gap: 10px
+        .managerWrapper
+            padding-top: 30px
+            border-top: 1px solid var(--gray-text-color)
+            margin-top: 10px
+            @media(max-width: $tab-sm)
+                padding-top: 20px
+            .manager
+                width: 465px
+                @media(max-width: $tab-sm)
+                    width: 100%
+        .btn
+            margin-top: 30px
+            width: 465px
+            @media(max-width: $tab-sm)
+                width: 100%
+                margin-top: 10px

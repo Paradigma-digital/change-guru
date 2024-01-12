@@ -1,0 +1,107 @@
+@import 'shared/styles/vars'
+    
+.header.active
+    background: var(--white-color)
+    margin: 10px
+    border-radius: var(--rounded-lg)
+    box-shadow: var(--shadow)
+    @media(max-width: $mob)
+        margin: 5px
+.header
+    transition: all var(--trs-300)
+    position: fixed
+    height: 94px
+    display: flex
+    align-items: center
+    right: 0
+    left: 0
+    z-index: var(--z-header)
+    @media(max-width: $tab-sm)
+        height: 70px
+        justify-content: space-between
+    
+    .navigation
+        display: flex
+        align-items: center
+        gap: 50px
+        flex: 1 
+        margin-left: 100px
+        @media(max-width: $tab-sm)
+            display: none
+        .navLink
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -0.8px
+    .auth
+        display: flex
+        align-items: center
+        gap: 30px
+        @media(max-width: $mob)
+            gap: 20px
+        .loginBtn
+            color: var(--dark-color)
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -0.8px
+            @media(max-width: $tab-sm)
+                font-size: 18px
+        .registerBtn
+            font-size: 20px
+            font-weight: 500
+            height: 58px
+            padding-top: 0
+            padding-bottom: 0
+            @media(max-width: $tab-sm)
+                font-size: 16px
+                height: 40px
+    .user
+        display: flex
+        align-items: center
+        gap: 30px
+        .userInfo
+            display: flex
+            align-items: center
+            gap: 10px
+           
+            .imageWrapper
+                width: 50px
+                height: 50px
+                overflow: hidden
+                border-radius: var(--rounded-sm)
+                background: var(--gray-light-color)
+                img
+                    width: 100%
+                    height: 100%
+                    object-fit: cover
+                .userIconWrapper
+                    width: 50px
+                    height: 50px
+                    background: var(--emerald-bg-color)
+                    display: flex
+                    align-items: center
+                    justify-content: center
+            .name
+                color: var(--dark-color)
+                font-family: Space Grotesk, sans-serif
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: 100%
+                letter-spacing: -0.8px 
+        .logoutBtn
+            display: flex
+            align-items: center
+            gap: 10px
+            span
+                color: var(--gray-text-color)
+                font-family: Space Grotesk
+                font-size: 20px
+                font-style: normal
+                font-weight: 500
+                line-height: 100%
+                letter-spacing: -0.8px
+                text-transform: none

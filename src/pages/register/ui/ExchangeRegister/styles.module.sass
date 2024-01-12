@@ -1,0 +1,71 @@
+@import 'shared/styles/vars'
+    
+.exchangeRegister
+    max-width: 970px
+    margin-top: 50px
+    @media(max-width: $tab-sm)
+        margin-top: 30px
+    .input
+        min-width: 635px
+        max-width: 635px
+        @media(max-width: $tab-sm)
+            min-width: 100%
+            max-width: 100%
+    .selector
+        min-width: 635px
+        max-width: 635px
+        @media(max-width: $tab-sm)
+            min-width: 100%
+            max-width: 100%
+    .sectionTitle
+        font-size: 30px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: -1.2px 
+        margin-bottom: 10px
+        @media(max-width: $tab-sm)
+            font-size: 24px
+    .withHint
+        display: flex
+        align-items: center
+        gap: 50px
+        @media(max-width: $tab-sm)
+            flex-direction: column
+            align-items: flex-start
+            gap: 10px
+        .hint
+            color: var(--gray-text-color)
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 140%
+            letter-spacing: -0.64px 
+            @media(max-width: $tab-sm)
+                font-size: 14px
+    .form
+        display: flex
+        flex-direction: column
+        gap: 50px
+        align-items: flex-start
+        @media(max-width: $tab-sm)
+            gap: 30px
+    .section
+        display: flex
+        flex-direction: column
+        gap: 20px
+        @media(max-width: $tab-sm)
+            gap: 10px
+            width: 100%
+        .address
+            display: flex
+            gap: 20px
+            @media(max-width: $tab-sm)
+                flex-direction: column
+                gap: 10px
+            input
+                min-width: auto
+                max-width: 635px
+    .nextBtn
+        @media(max-width: $mob)
+            width: 100%

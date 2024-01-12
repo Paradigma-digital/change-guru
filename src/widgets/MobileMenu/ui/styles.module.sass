@@ -1,0 +1,26 @@
+@import 'shared/styles/vars'
+    
+.menu.active
+    transform: translateX(0)
+.menu
+    height: 100vh
+    width: 50vw
+    background: var(--white-color)
+    position: fixed
+    right: 0
+    transform: translateX(100%)
+    transition: var(--trs-500)
+    padding: 20px
+    box-sizing: border-box
+    @media(max-width: $mob)
+        width: 100vw
+    .menuContent
+        display: flex
+        flex-direction: column
+        gap: 10px
+        margin-top: 50px
+        .navLink.active
+            color: var(--emerald-color)
+        .navLink
+            font-size: 30px
+            font-weight: 500

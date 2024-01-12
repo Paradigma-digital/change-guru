@@ -1,0 +1,62 @@
+@import 'shared/styles/vars'
+    
+.accordion.active
+    .titleWrapper
+        .title
+            color: var(--emerald-color)
+        .icon
+            &::after
+                height: 0
+                opacity: 0
+.accordion
+    border-bottom: 1px solid var(--gray-light-color)
+    padding: 24px 0
+    &:first-child
+        border-top: 1px solid var(--gray-light-color)
+    .titleWrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        cursor: pointer
+        .title
+            cursor: pointer
+            position: relative
+            font-size: 30px
+            font-style: normal
+            font-weight: 500
+            line-height: 120%
+            letter-spacing: -1.2px
+            max-width: 485px
+            transition: var(--trs-500)
+            @media(max-width: $tab-sm)
+                font-size: 24px
+                margin-bottom: 20px
+            @media(max-width: $mob)
+                max-width: 260px
+        .icon
+            width: 20px
+            height: 2px
+            background: var(--emerald-color)
+            position: relative
+            &::after
+                content: ''
+                transition: var(--trs-500)
+                position: absolute
+                right: 0
+                left: 0
+                top: 0
+                bottom: 0
+                margin: auto
+                height: 20px
+                width: 2px
+                opacity: 1
+                background: var(--emerald-color)
+    .content
+        max-height: 0
+        overflow: hidden
+        transition: max-height 450ms ease, opacity var(--trs-800)
+        opacity: 0
+    .content.show
+        transition: max-height var(--trs-800), opacity var(--trs-300)
+        max-height: 50vh
+        opacity: 1

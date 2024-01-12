@@ -1,0 +1,84 @@
+@import 'shared/styles/vars'
+    
+.advancedSetting
+    // max-width: 970px
+    margin-top: 50px
+    @media(max-width: $tab-sm)
+            margin-top: 30px
+    input:not([type='checkbox'])
+        min-width: 635px
+        max-width: 635px
+        @media(max-width: $tab-sm)
+            min-width: 100%
+            max-width: 100%
+    .selector
+        min-width: 635px
+        max-width: 635px
+        @media(max-width: $tab-sm)
+            min-width: 100%
+            max-width: 100%
+    .sectionCheckboxGroup
+        display: flex
+        flex-direction: column
+        gap: 10px
+        .checkboxGroup
+            min-width: 635px
+            max-width: 635px
+            @media(max-width: $tab-sm)
+                min-width: 100%
+                max-width: 100%
+    .sectionTitle
+        font-size: 30px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: -1.2px 
+        margin-bottom: 30px
+        display: block
+        @media(max-width: $tab-sm)
+            font-size: 24px
+    .withHint
+        display: flex
+        align-items: center
+        gap: 50px
+        @media(max-width: $tab-sm)
+            flex-direction: column
+            align-items: flex-start
+            gap: 10px
+        .hint
+            color: var(--gray-text-color)
+            font-size: 16px
+            font-style: normal
+            font-weight: 400
+            line-height: 140%
+            letter-spacing: -0.64px 
+            max-width: 540px
+            @media(max-width: $tab-sm)
+                font-size: 14px
+    .section
+        margin-top: 50px
+        margin-bottom: 50px
+        .label
+            display: flex
+            align-items: center
+            gap: 10px
+            cursor: pointer
+            input:checked ~ span
+                color: var(--emerald-color)
+        .checkboxList
+            display: flex
+            align-items: center
+            row-gap: 20px
+            column-gap: 30px
+            flex-wrap: wrap
+            max-width: 635px
+
+        .inputs
+            margin-top: 30px
+            display: flex
+            flex-direction: column
+            gap: 20px
+    .submitBtn
+        width: 343px
+        @media(max-width: $mob)
+            width: 100%

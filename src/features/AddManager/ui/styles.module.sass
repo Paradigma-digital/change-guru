@@ -1,0 +1,40 @@
+@import 'shared/styles/vars'
+
+.addManagerWrapper
+    display: flex
+    align-items: center
+    gap: 20px
+    .addManager
+        border-radius: var(--rounded-lg)
+        border: 1px solid rgba(0,0,0,0)
+        background: var(--emerald-bg-color)
+        display: flex
+        align-items: center
+        gap: 20px
+        padding: 0 30px
+        justify-content: space-between
+        transition: var(--trs-500)
+        cursor: pointer
+        height: 58px
+        box-sizing: border-box
+        span
+            transition: var(--trs-500)
+            color: var(--emerald-color)
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -0.8px
+        svg
+            path
+                transition: var(--trs-500)
+                stroke: var(--emerald-color)
+        &:hover
+            border-color: var(--emerald-color)
+        &:active
+            background: var(--emerald-color)
+            span
+                color: var(--white-color)
+            svg
+                path
+                    stroke: var(--white-color)

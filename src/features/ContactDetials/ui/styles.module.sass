@@ -1,0 +1,46 @@
+@import 'shared/styles/vars'
+    
+.details
+    padding: 50px
+    max-width: 950px
+    width: 100%
+    box-sizing: border-box
+    @media(max-width: $tab)
+        padding: 20px
+    .title
+        font-size: 30px
+        font-style: normal
+        font-weight: 500
+        line-height: 120%
+        letter-spacing: -1.2px
+        margin-bottom: 30px
+        display: block
+        @media(max-width: $tab)
+            font-size: 24px
+            margin-bottom: 20px
+    .detailsForm
+        display: flex
+        flex-direction: column
+        .phoneInput
+            width:302px
+            @media(max-width: $tab-sm)
+                width: 100%
+
+        .detailsList
+            padding-top: 30px
+            margin-top: 30px
+            border-top: 1px solid var(--gray-text-color)
+            display: grid
+            gap: 20px
+            grid-template-columns: repeat(3, 1fr)
+            @media(max-width: $tab-sm)
+                grid-template-columns: repeat(1, 1fr)
+                border-top: none
+                gap: 10px
+                margin-top: 10px
+                padding-top: 0
+        .btn
+            width: 465px
+            margin-top: 30px
+            @media(max-width: $tab-sm)
+                width: 100%

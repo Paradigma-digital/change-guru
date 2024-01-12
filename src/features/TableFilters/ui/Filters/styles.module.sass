@@ -1,0 +1,42 @@
+@import 'shared/styles/vars'
+    
+.filters.active
+    opacity: 1
+    transform: translateY(0)
+    pointer-events: all
+.filters
+    background: var(--white-color)
+    filter: drop-shadow(0px 37px 50px rgba(162, 168, 176, 0.10))
+    border-radius: var(--rounded-md)
+    display: grid
+    grid-template-columns: 1fr 1px 1fr
+    margin-top: 30px
+    position: absolute 
+    opacity: 0
+    transform: translateY(-50%)
+    pointer-events: none
+    z-index: var(--z-content)
+    transition: transform var(--trs-500), opacity var(--trs-300)
+    @media(max-width: $tab-sm)
+        grid-template-columns: 1fr
+        margin-top: 0
+        top: -70px
+    .leftPart
+        padding: 40px
+        display: flex
+        flex-direction: column
+        gap: 50px
+        @media(max-width: $tab-sm)
+            padding: 20px
+            gap: 35px
+    .rightPart
+        padding: 40px
+        @media(max-width: $tab-sm)
+            padding: 20px
+    .separator
+        height: 100%
+        width: 1px
+        background: var(--gray-light-color)
+        @media(max-width: $tab-sm)
+            height: 1px
+            width: 100%

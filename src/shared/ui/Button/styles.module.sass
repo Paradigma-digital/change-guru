@@ -1,0 +1,29 @@
+.button.clear
+    background: none
+    border: none
+    padding: 0
+    display: flex
+    align-items: center
+    color: var(--dark-color)
+.button.primary
+    background: var(--main-grad)
+    height: 58px
+.button.additional
+    background: none
+    height: 58px
+    border: 1px solid var(--gray-text-color)
+    color: var(--gray-text-color)
+.button
+    padding: 0 30px
+    text-transform: uppercase
+    font-family: 'Space Grotesk', sans-serif
+    border: none
+    font-weight: 500
+    border-radius: var(--rounded-lg)
+    cursor: pointer
+    color: var(--white-color)
+    font-size: 20px
+    &:disabled
+        opacity: .5
+        pointer-events: none
+    

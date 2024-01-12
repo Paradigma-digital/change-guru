@@ -1,0 +1,33 @@
+@import 'shared/styles/vars'
+    
+.exchangeTable
+    margin-top: 120px
+    @media(max-width: $tab-sm)
+        margin-top: 50px
+    .filtersWrapper
+        margin-top: 30px
+        width: 100%
+        display: flex
+        justify-content: space-between
+    .tableWrapper
+        @media(max-width: $tab)
+            overflow: auto
+        table
+            margin-top: 53px
+            width: 100%
+            min-width: $tab
+    .tableInfo
+        .loader
+            display: flex
+            justify-content: center
+            padding: 20px 0
+            border-bottom: 1px solid var(--gray-light-color)
+        .empty
+            display: flex
+            justify-content: center
+            padding: 20px 0
+            border-bottom: 1px solid var(--gray-light-color)
+    .paginationWrapper
+        display: flex
+        justify-content: center
+        margin-top: 20px

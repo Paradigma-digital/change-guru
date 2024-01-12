@@ -1,0 +1,22 @@
+@import 'shared/styles/vars'
+    
+.modalWrapper
+    position: relative
+    .closeBtn
+        position: absolute
+        right: -50px
+        top: -50px
+        @media(max-width: $mob)
+            right: -20px
+            top: -70px
+    .modaContent
+        background: var(--white-color)
+        border-radius: var(--rounded-lg)
+        padding: 50px
+        text-align: center
+        width: 525px
+        @media(max-width: $tab-sm)
+            width: 50vw
+        @media(max-width: $mob)
+            width: auto
+            padding: 30px 10px

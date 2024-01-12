@@ -1,0 +1,61 @@
+.inputLabelWrapper.error
+    background: var(--error-bg-color)
+    .input
+        background: var(--error-bg-color)
+        border-color: var(--error-color)
+        &::placeholder
+            color: var(--gray-light-color)
+        // &:focus
+        //     background: var(--error-bg-color)
+        //     border-color: var(--error-color)
+.inputLabelWrapper
+    display: flex
+    align-items: center
+    border-radius: var(--rounded-lg)
+    border: 1px solid var(--gray-light-color)
+    transition: all var(--trs-500)
+    position: relative
+    box-sizing: border-box
+    height: 58px
+    width: 100%
+    z-index: var(--z-content)
+    &:hover
+        border-color: var(--emerald-color)
+    &:focus
+        background: var(--emerald-bg-color)
+        border-color: rgba(0,0,0,0)
+    .input
+        height: 100%
+        outline: none
+        border: 1px solid rgba(0,0,0,0)
+        padding: 0 30px
+        width: 100%
+        border-radius: var(--rounded-lg)
+        transition: all var(--trs-500)
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 100%
+        letter-spacing: -0.8px
+        box-sizing: border-box
+        background: var(--white-color)
+        // &:hover
+        //     // border-color: var(--emerald-color)
+        &::placeholder
+            font-size: 20px
+            font-style: normal
+            font-weight: 500
+            line-height: 100%
+            letter-spacing: -0.8px
+            color: var(--gray-text-color)
+            opacity: 1
+        &:focus
+            background: var(--emerald-bg-color)
+            border-color: var(--emerald-color)
+    .icon
+        position: absolute
+        right: 30px
+        top: 0
+        bottom: 0
+        display: flex
+        align-items: center

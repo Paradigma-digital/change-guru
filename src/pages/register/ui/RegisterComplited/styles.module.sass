@@ -1,0 +1,35 @@
+@import 'shared/styles/vars'
+    
+.registerCompited
+    margin-top: 30px
+    .content
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        gap: 70px
+        @media(max-width: $tab-sm)
+            grid-template-columns: repeat(1,1fr)
+            gap: 30px
+        .text
+            @media(max-width: $tab-sm)
+                order: 1
+            .description
+                font-size: 30px
+                font-style: normal
+                font-weight: 400
+                line-height: 120%
+                letter-spacing: -1.2px
+            .startBtn
+                width: 345px
+                margin-top: 50px
+                @media(max-width: $mob)
+                    width: 100%
+        .imageWrapper
+            position: relative
+            width: 100%
+            aspect-ratio: 1.4
+            @media(max-width: $tab-sm)
+                order: -1
+            img
+                position: absolute
+                width: 100%
+                

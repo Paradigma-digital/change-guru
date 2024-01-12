@@ -1,0 +1,47 @@
+@import 'shared/styles/vars'
+    
+tr
+    cursor: pointer
+    display: grid
+    gap: 1%
+    grid-template-columns: 2% 10% 13% 16% 12% 12% 8% 8% 5% 6%
+    border-bottom: 1px solid var(--gray-light-color)
+    transition: var(--trs-500)
+    &:hover
+        border-color: var(--emerald-color) !important
+        td
+            color: var(--emerald-color)
+    td
+        padding: 20px 10px 20px 0
+        width: 100%
+        display: flex
+        align-items: center
+        gap: 10px
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 100%
+        letter-spacing: -0.8px
+        transition: var(--trs-500)
+        svg
+            transition: var(--trs-500)
+            path
+                transition: var(--trs-500)
+        img
+            width: 30px
+            height: 30px
+        &:first-child
+            @media(max-width: $tab)
+                position: sticky
+                left: 0
+                background: var(--white-color)
+        &:last-child
+            display: flex
+            justify-content: center
+            padding-right: 0
+    
+.actvie
+    svg
+        path
+            fill: var(--emerald-color)
+            stroke: var(--emerald-color)

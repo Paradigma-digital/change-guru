@@ -1,0 +1,27 @@
+@import 'shared/styles/vars'
+    
+.work
+    margin-top: 120px
+    padding-bottom: 120px
+    border-bottom: 1px solid var(--gray-text-color)
+    @media(max-width: $tab-sm)
+        margin-top: 100px
+        padding-bottom: 50px
+    .content
+        .description
+            margin-top: 20px
+            color: var(--gray-text-color)
+            font-size: 18px
+            font-style: normal
+            font-weight: 400
+            line-height: 140%
+            letter-spacing: -0.72px
+            @media(max-width: $tab-sm)
+                font-size: 16px
+        .workList
+            margin-top: 50px
+            display: flex
+            justify-content: space-between
+            gap: 30px
+            @media(max-width: $desktop-md)
+                overflow: auto

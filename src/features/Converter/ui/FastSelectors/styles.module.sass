@@ -1,0 +1,40 @@
+@import 'shared/styles/vars'
+    
+.selectors
+    background: var(--white-color)
+    padding: 30px 40px
+    border-radius: var(--rounded-lg)
+    margin-top: 48px
+    @media(max-width: $mob)
+        display: flex
+        justify-content: space-between
+    .title
+        margin-right: 35px
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 100%
+        letter-spacing: -0.8px
+        white-space: nowrap
+        @media(max-width: $mob)
+            margin-right: 0
+            font-size: 18px
+   
+    .top
+        display: flex
+        align-items: center
+        gap: 10px
+        border-bottom: 1px solid var(--gray-light-color)
+        padding-bottom: 30px
+        @media(max-width: $mob)
+            flex-direction: column
+            padding-bottom: 0
+            border-bottom: none
+    .bottom
+        padding-top: 30px
+        display: flex
+        align-items: center
+        gap: 10px
+        @media(max-width: $mob)
+            flex-direction: column
+            padding-top: 0

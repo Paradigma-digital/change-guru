@@ -1,0 +1,49 @@
+export const CalendarIcon = () => {
+  return (
+    <svg
+      width="18"
+      height="18"
+      viewBox="0 0 18 18"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M2 16L2 4L16 4L16 16L2 16Z"
+        stroke="#A2A8B0"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="3"
+        y1="8"
+        x2="15"
+        y2="8"
+        stroke="#A2A8B0"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="5"
+        y1="2"
+        x2="5"
+        y2="3"
+        stroke="#A2A8B0"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <line
+        x1="13"
+        y1="3"
+        x2="13"
+        y2="2"
+        stroke="#A2A8B0"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
